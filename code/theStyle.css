@@ -1,0 +1,25 @@
+body {
+    background-color: pink;
+    font-family:'Courier New', Courier, monospace;
+}
+
+main {
+    background-color: green;
+    border: 5px solid black;
+    margin: 40px;
+    padding: 1vw;
+}
+
+header{
+    background-color: blue;
+}
+ol{
+    background-color: purple;
+}
+li{
+    background-color: white;
+    display:inline;
+}
+a {
+    background-color: yellow;
+}
