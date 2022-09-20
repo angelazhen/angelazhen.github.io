@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>As We May Think reflection</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h2 style="font-size: 80px"><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">re: As We May Think</a></h2>
+        <h3 style="font-size: 20px"><a href="https://www.theatlantic.com/author/vannevar-bush/">By: Vannevar Bush, July 1945</a></h3>
+
+        <div class="container">
+            <div class="date">
+                <p>77 Years Ago</p>
+                <h2>September 13, 1945</h2>
+                <h3>"A library of a million volumes could be compressed into one end of a desk."</h3>
+            </div>
+            <img src="image/past.jpeg">
+            <h1 id="current-time"></h1>
+        </div>
+
+        <div class="container">
+            <div class="date">
+                <p>Today</p>
+                <h2>September 13, 2022</h2>
+                <h3>"Consider a future device for individual use, which is a sort of mechanized private file and library."</h3>
+            </div>
+            <img src="image/now.png">
+            <h1 id="current-time"></h1>
+        </div>
+
+        <div class="container">
+            <div class="date">
+                <p>77 Years Later</p>
+                <h2>September 13, 2099</h2>
+                <h3>"Publication has been extended ... beyond our present ability to make real use of the record."</h3>
+            </div>
+            <img src="image/future.jpeg">
+            <h1 id="current-time"></h1>
+        </div>
+
+        <script>
+            let time = document.getElementById("current-time");
+        
+        
+            setInterval(() =>{
+                let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+            },1000)  
+        
+        </script>
+    </body>
+    </html>

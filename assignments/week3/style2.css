@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.landingpage{
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    padding: 10px 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landingpage h1{
+    font-size: 75px;
+    position: relative;
+    z-index: 2;
+    -webkit-text-fill-color: #000;
+    /* -webkit-text-stroke: 2px #000; */
+    cursor: pointer;
+}
+.landingpage h1:hover{
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke: transparent;
+}
+
+.img-box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+.landingpage h1:nth-child(1):hover ~ .img-box{
+    background-image: url(image/eyes1.jpeg);
+}
+.landingpage h1:nth-child(2):hover ~ .img-box{
+    background-image: url(image/eyes2.jpeg);
+}
+.landingpage h1:nth-child(3):hover ~ .img-box{
+    background-image: url(image/eyes3.jpeg);
+}
+
+.reflection{
+    margin: 17px;
+    padding: 17px;
+}
+.reflection h2{
+    font-size: 40px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    text-decoration: underline;
+}
+.reflection p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:justify;
+    font-size: 22px;
+    padding: 2%;
+}
+
+
+
+
+
+
+
