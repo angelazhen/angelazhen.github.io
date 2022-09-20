@@ -1,25 +1,29 @@
-body {
-    background-color: pink;
-    font-family:'Courier New', Courier, monospace;
+/* ------------------- HEADER */
+header {
+	display: flex;
+	justify-content: space-between;
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 16px 20px;
+	box-sizing: border-box;
+	background: #FFF;
+	z-index: 100;
 }
-
-main {
-    background-color: green;
-    border: 5px solid black;
-    margin: 40px;
-    padding: 1vw;
+.web-header {
+	color: rgb(0, 0, 0);
 }
-
-header{
-    background-color: blue;
+/* ------------------- CHAPTER NAVIGATION */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 110;
 }
-ol{
-    background-color: purple;
-}
-li{
-    background-color: white;
-    display:inline;
-}
-a {
-    background-color: yellow;
+nav a {
+	line-height: 2em;
+	text-decoration: none;
+	color: var(--primary, #222);
+	margin: 0 10px;
+	font-size: 1.6rem;
 }
