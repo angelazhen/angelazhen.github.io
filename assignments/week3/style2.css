@@ -3,6 +3,13 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+#home{
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	cursor:pointer;
+    z-index: 110;
+}
 .landingpage{
     border-bottom: 2px solid black;
     width: 100%;
