@@ -8,6 +8,14 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(90deg, #fff 50%, rgb(130, 130, 130) 50%);
 }
+.title{
+    position: fixed;
+    left: 30px;
+    top: 20px;
+}
+.title p{
+    line-height: 0.01px;
+}
 #home{
 	position: fixed;
 	right: 30px;

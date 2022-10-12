@@ -1,0 +1,16 @@
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    background: #000000;
+    text-decoration-color: #fff;
+    text-align: center;
+}
+#home{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	cursor:pointer;
+}

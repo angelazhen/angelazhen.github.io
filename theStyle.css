@@ -1,19 +1,33 @@
-/* boey, html{
-	height: 100%;
-}
-.bg {
-	background-image: url("/me.jpeg");
-	height: 100%; 
-	background-position: center center;
-	background-attachment: fixed;
+/* .bg-image {
+	background-image: url("background.jpeg");
+	height: 100vh;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100vh 100vw;
+	background-size: cover;
+	position: relative;
   } */
-/* ------------------- HEADER */
-header {
+  
+  .banner{
+	  text-align: center;
+  }
+  .banner h1{
+	  color:rgb(0, 0, 0);
+	  padding: top 0px 0px;
+	  font-size:140px;
+	  font-weight: 700;
+	  font-style: normal;
+	  transition: 0.5s;
+	  font-family: "lust", serif;
+  }
+  
+  .banner h1:hover{
+	  -webkit-text-stroke: 2px #fff;
+	  color: transparent;
+  }
+
+  header {
 	display: flex;
 	justify-content: space-between;
-
 	top: 0;
 	left: 0;
 	width: 100%;
