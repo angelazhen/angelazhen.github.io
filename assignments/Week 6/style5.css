@@ -1,0 +1,39 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 30vh 30vw;
+    z-index: -100;
+  }
+  
+  .grid-container div {
+    display: contents;
+  }
+  
+  .grid-container span {
+    text-align: center;
+    padding: 25px 25px;
+  }
+  
+.box {
+    background-color: gold;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
