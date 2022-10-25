@@ -1,3 +1,10 @@
+#home{
+	position: fixed;
+	right: 90px;
+	top: 60px;
+	cursor:pointer;
+}
+
 .grid-container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
