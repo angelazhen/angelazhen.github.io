@@ -16,18 +16,140 @@
     padding: 25px 25px;
   }
   
-.box {
+.box1 {
     background-color: gold;
     border-radius: 10px;
     width: 100px;
     height: 100px;
   }
   
-  .box:hover {
+  .box1:hover {
     animation-name: rotate;
     animation-duration: 0.7s;
   }
+  .box2 {
+    background-color: gold;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
   
+  .box2:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }
+  .box3 {
+    background-color: gold;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box3:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }
+  .box4 {
+    background-color: rgb(255, 162, 0);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box4:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }.box5 {
+    background-color: rgb(225, 0, 0);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box5:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+  }
+  .box6 {
+  background-color: rgb(255, 162, 0);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  }
+
+  .box6:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  }
+  .box7 {
+    background-color: rgb(0, 191, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    }
+  
+    .box7:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    }
+    .box8 {
+      background-color: rgb(0, 191, 255);
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      }
+    
+      .box8:hover {
+      animation-name: rotate;
+      animation-duration: 0.7s;
+      }
+
+      .box9 {
+        background-color: rgb(0, 191, 255);
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        }
+      
+        .box9:hover {
+        animation-name: rotate;
+        animation-duration: 0.7s;
+        }
+  .box10 {
+  background-color: rgb(0, 13, 255);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  }
+
+  .box10:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  }
+  .box11 {
+    background-color: rgb(0, 13, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    }
+  
+    .box11:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    }
+
+    .box12 {
+      background-color: rgb(0, 13, 255);
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      }
+    
+      .box12:hover {
+      animation-name: rotate;
+      animation-duration: 0.7s;
+      }
+
   @keyframes rotate {
     0% {
       transform: rotate(0);
