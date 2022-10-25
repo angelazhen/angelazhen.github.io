@@ -1,5 +1,6 @@
 #home{
 	position: fixed;
+  text-align: right;
 	right: 90px;
 	top: 60px;
 	cursor:pointer;
