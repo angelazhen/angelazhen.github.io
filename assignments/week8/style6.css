@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  position: fixed;
+  right: 30px;
+  top: 90px;
+}
+.title p{
+  line-height: 0.01px;
+}
+#home{
+position: fixed;
+right: 30px;
+top: 60px;
+cursor:pointer;
+}
