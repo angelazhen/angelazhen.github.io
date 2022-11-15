@@ -1,0 +1,224 @@
+let star=[];
+let number_of_stars=[7,8,9,10,11]
+let counter=0;
+let page=0;
+let button;
+let button1;
+let button2;
+let button3;
+let input;
+let honey_font;
+let showText = true;
+let showText2= true;
+let sleep_music;
+let music=['assets/Calm.mp3','assets/Evening.mp3','assets/Sunset.mp3','assets/Otjanbird.mp3']
+let universe;
+let sleep_quotes=["We are all just tiny stars\n in the huge universe.","Don't worry.","tomorrow will be \nanother day.","just sleep.","The universe has your back.","Good night.","Feel the energy of the universe.","Stars shine for you.","Turn off the lights.","We love you.","No day is so bad \nit can’t be fixed with a nap."]
+
+
+
+
+function preload(){
+star_image=loadImage('assets/star.png');
+ moon=loadImage('assets/moon.png')
+  universe=loadImage('assets/starbackground.jpeg')
+  honey_font=loadFont('assets/honey.ttf') ;
+  data=loadJSON('https://api.nasa.gov/planetary/apod?api_key=AwdAQHCCO3kLst9WQryQYqJna4GLAezduSUX15oa')
+  
+  soundFormats('mp3');
+  sleep_music = loadSound(random(music))
+}
+
+function setup() {
+  createCanvas(600, 600);
+  
+  button_initialize=createButton('just click me!')
+  button1= createButton('play with us');
+  button2= createButton('who are you?')
+  input=createInput('')
+ 
+
+  
+  for(i=0;i<random(number_of_stars);i++)
+  star[i] = new star_background (random(width),random(height),random(20,40));
+  
+star_today = createImg(data.hdurl,'data')
+   
+ button3 = createButton('play music');
+  
+
+  
+  
+  
+}
+
+function draw() {
+  
+user_input()
+
+  
+if(page==1){ 
+  
+  textSize(20)
+ 
+  background(255-counter*40)
+  button1.remove();
+  button2.remove();
+  
+  for(i=0;i<star.length;i++){
+    star[i].display()
+    star[i].move()}
+  
+  if(showText){
+  fill(206, 194, 255)
+  text("After a night's work, we felt sleepy, just like you.\n Wanna Help? Click on us.",100,200)}
+}
+
+  
+if (star.length==0){
+  showText=false;
+  fill(206, 194, 255)
+  text("You put "+counter+" stars to sleep.\nNow it's your turn. \nLights off & Good night.",180,250)
+  moon.resize(100,100)
+  image(moon,300,300)
+
+}
+  
+    
+if(page==2){
+  background(0)
+  button1.remove()
+  button2.remove()
+  button3.position(530,10)
+  button3.style('font-family','baskerville')
+  button3.style('background-color','#B3B3F1')
+  button3.mousePressed(music_play)
+  
+  
+  image(star_today,0,0,width,height)
+  text("Click somewhere, anywhere.",10,30)
+mousePressed()
+noLoop()}
+}
+
+
+  
+
+    
+function user_input(){
+  textFont('Baskerville')
+  textSize(30)
+  if(showText2){
+    text("What's your name?",150,200)}
+
+  input.position(180, 250)
+  button_initialize.position(200,300)
+  button_initialize.mousePressed(initial_page)
+  
+}
+
+function initial_page(){
+  page=0
+  input.remove()
+  button_initialize.remove()
+  showText2=false
+  image(universe,0,0,width,height)
+  textFont('Baskerville')
+  fill(255)
+  text("Good evening, "+input.value()+".\n We've been waiting.",180, 200)
+  textSize(30)
+  button1.style('font-family','baskerville')
+  button2.style('font-family','baskerville')
+  button1.style('background-color','#B3B3F1')
+  button2.style('background-color','#B3B3F1')
+
+    button1.position(100, 300)
+    button1.mousePressed(page1)
+    button2.position(400, 300)
+    button2.mousePressed(page2)
+
+
+}
+
+
+function page1(){ 
+  page=1
+ }
+
+  
+  
+
+
+function page2(){
+  page=2
+
+}
+
+function music_play(){
+  sleep_music.play()
+  sleep_music.setVolume(0.5)
+}
+
+
+
+function mousePressed(){
+  for(i=0;i<star.length;i++){
+  if(star[i].clicked()){
+   
+    star.splice(i,1)
+    counter++
+    console.log(counter)
+    
+  }
+    
+  }
+  
+  if(page==2) {
+    fill(255)
+    textSize(10)
+    text(random(sleep_quotes),mouseX,mouseY)
+
+  }
+  
+  
+  
+ 
+ 
+}
+
+
+
+class star_background {
+  constructor (x,y,r){
+    this.x=x;
+    this.y=y;
+    this.radius=r;
+  }
+  
+
+  
+  display(){
+   image(star_image,this.x,this.y,this.radius,this.radius)
+    
+    }
+  
+  move(){
+    this.x+=random(-1,1)
+    this.y+=random(-1,1)
+  }
+  
+  clicked(){
+    let d=dist(mouseX,mouseY,this.x,this.y)
+    if(d<this.radius){
+   return true}
+    else{return false}
+  }
+  
+  
+  
+  
+}
+
+
+  
+
