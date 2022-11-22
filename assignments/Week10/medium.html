@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium is the Message Response</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1>Medium is the Message</h1>
+    <div id="focus"></div>
+</div>
+
+<div id="home">
+    <a href="/index.html">🏠</a>
+ </div>
+
+<script>
+
+let focus = document.getElementById("focus");
+
+let focusHalfWidth = focus.offsetWidth/2;
+
+document.onmousemove = function(e){
+    focus.style.left = e.pageX - focusHalfWidth + "px";
+    focus.style.top = e.pageY - focusHalfWidth + "px";
+}
+
+</script>
+
+</body>
+</html>
