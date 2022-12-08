@@ -19,7 +19,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,25,0.1),rgba(0,0,25,0.9)), url('images/kennedy-nixon.jpeg');
+    background-image: linear-gradient(rgba(0,0,25,0.1),rgba(0,0,25,0.9)), url('assets/foreground.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -39,7 +39,7 @@ body{
     width: 280px;
     height: 280px;
     z-index: 1;
-    background: url('images/medium.jpeg');
+    background: url('assets/background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
