@@ -1,3 +1,4 @@
 # angelazhen.github.io
 
-Welcome to my assignment documentation website page!
+Hi there, Welcome!👋
+This is github is dedicated to my assignment documentation for Web Development class at NYU IDM!
