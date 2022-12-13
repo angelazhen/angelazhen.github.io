@@ -1,6 +1,9 @@
  .banner{
 	  text-align: center;
   }
+.final-banner{
+    padding: 120px;
+}
   .banner h1{
 	  color:rgb(0, 0, 0);
 	  padding: top 0px 0px;
@@ -130,7 +133,7 @@ nav a {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #808080;
+    border: 3px solid #808080;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -139,4 +142,71 @@ nav a {
 }
 .btn:hover{
     background: #d6d6d6;
+}
+
+.btn-pink{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 3px solid #d67490;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #d67490;
+    transition: background 0.5s;
+}
+.btn-pink:hover{
+    background: #ffe0e9;
+}
+
+/* -------final project page------- */
+
+#home{
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	cursor:pointer;
+    z-index: 110;
+}
+.landingpage{
+    border-bottom: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landingpage h1{
+    font-size: 75px;
+    z-index: 2;
+}
+
+.img-box{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.reflection{
+    margin: 17px;
+    padding: 17px;
+}
+.reflection h2{
+    font-size: 40px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    color: #d67490;
+}
+.reflection p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:justify;
+    font-size: 22px;
+    padding: 2%;
 }
