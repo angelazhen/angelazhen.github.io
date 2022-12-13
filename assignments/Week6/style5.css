@@ -1,3 +1,55 @@
+.glitch{
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+.glitch::before, .glitch::after{
+  content: 'Ocean Sunset';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.glitch:hover::before{
+  animation: glitch 0.3s linear 6;
+  color: #e91e63;
+  z-index: -2;
+}
+.glitch:hover::after{
+  animation: glitch 0.3s linear 6 reverse;
+  color: #2196f3;
+  z-index: -1;
+}
+@keyframes glitch {
+  0%{
+      top: 0;
+      left: 0;
+  }
+  20%{
+      top: -5px;
+      left: -5px;
+  }
+  40%{
+      top: 5px;
+      left: 5px;
+  }
+  60%{
+      top: -5px;
+      left: 5px;
+  }
+  80%{
+      top: 5px;
+      left: -5px;
+  }
+  100%{
+      top: 0;
+      left: 0;
+  }
+}
+
 #home{
 	position: fixed;
   text-align: right;
@@ -9,9 +61,9 @@
 .grid-container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    grid-gap: 2px;
     background-color: #2196F3;
-    padding: 30vh 30vw;
+    padding: 20vh 31vw;
     z-index: -100;
   }
   
